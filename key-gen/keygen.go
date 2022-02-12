@@ -40,7 +40,7 @@ func main() {
 }
 
 /*
-Requests a password off the user
+password requests a password off the user
 */
 func password() (string, error) {
 
@@ -56,8 +56,8 @@ func password() (string, error) {
 }
 
 /*
-Generates a new keystore with the given password
-Returns the private and public keys in hex format
+keys generates a new keystore with the given password
+and returns the private and public keys in hex format
 */
 func keys(password string) (string, string, error) {
 
@@ -78,7 +78,7 @@ func keys(password string) (string, string, error) {
 }
 
 /*
-Changes the keystore file name
+clean changes the keystore file name and stores it in './keystore'
 */
 func clean(publicKey string) {
 
