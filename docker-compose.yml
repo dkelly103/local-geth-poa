@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  ethereum:
+    image: ethereum/client-go:alltools-v1.10.15
+    entrypoint: /start.sh
+    container_name: ethereum
+    ports:
+      - 8544-8546:8544-8546
+    volumes:
+      - ./keystore:/keystore:ro
+      - ./start.sh:/start.sh:ro
+      - ./genesis.json:/genesis.json
+    environment:
+      - ETHER_BASE=0x4d612e5f898892e22c2dcfa219ff5fb1dd0ef2b7
+      - UNLOCK=0x4d612e5f898892e22c2dcfa219ff5fb1dd0ef2b7
