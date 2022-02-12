@@ -14,4 +14,4 @@
 
         ./keygen print
 
-- Add the ethereum address to the genesis with a top up amount
+- Add the ethereum address to the genesis with a balance
